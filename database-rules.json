@@ -1,0 +1,75 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid",
+        ".validate": "newData.hasChildren(['email', 'fullName'])"
+      }
+    },
+    
+    "motorcycles": {
+      ".read": "auth !== null",
+      
+      "$motorcycleId": {
+        ".write": "auth !== null && (!data.exists() || data.child('userId').val() === auth.uid)",
+        ".validate": "newData.hasChildren(['userId', 'brand', 'model'])",
+        
+        "userId": {
+          ".validate": "newData.val() === auth.uid"
+        },
+        
+        "deviceId": {
+          ".validate": "newData.isString() || newData.val() === null"
+        },
+        
+        "isConnected": {
+          ".validate": "newData.isBoolean()"
+        }
+      }
+    },
+    
+    "diagnostics": {
+      ".read": "auth !== null",
+      
+      "$deviceId": {
+        ".write": true,
+        ".validate": "newData.hasChildren(['timestamp'])"
+      }
+    },
+    
+    "connections": {
+      ".read": "auth !== null",
+      
+      "$motorcycleId": {
+        ".write": "auth !== null && (!data.exists() || root.child('motorcycles').child($motorcycleId).child('userId').val() === auth.uid)",
+        ".validate": "newData.hasChildren(['motorcycleId', 'deviceId', 'connectedAt', 'isActive'])",
+        
+        "motorcycleId": {
+          ".validate": "newData.val() === $motorcycleId"
+        }
+      }
+    },
+    
+    "diagnosticData": {
+      ".read": "auth !== null",
+      
+      "$deviceId": {
+        ".write": true,
+        ".validate": "newData.hasChildren(['timestamp', 'batteryLevel'])"
+      }
+    },
+    
+    "notifications": {
+      ".read": "auth !== null",
+      
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    }
+  }
+} 

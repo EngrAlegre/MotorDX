@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#0A8F6C</color>
+    <color name="primary_dark">#076E53</color>
+    <color name="primary_light">#B6E5D8</color>
+    <color name="accent">#FF5722</color>
+    
+    <color name="background_light">#E5F2EE</color>
+    <color name="background_dark">#1A2E28</color>
+    
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#BDBDBD</color>
+    <color name="text_light">#FFFFFF</color>
+    
+    <color name="divider">#EEEEEE</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    
+    <!-- Status colors -->
+    <color name="status_good">#4CAF50</color>
+    <color name="status_warning">#FFC107</color>
+    <color name="status_critical">#F44336</color>
+    <color name="status_info">#2196F3</color>
+    
+    <!-- Dashboard gauge colors -->
+    <color name="gauge_green">#4CAF50</color>
+    <color name="gauge_yellow">#FFC107</color>
+    <color name="gauge_red">#F44336</color>
+    <color name="gauge_background">#E0E0E0</color>
+    
+    <!-- Card background colors -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_background_dark">#263238</color>
+</resources> 

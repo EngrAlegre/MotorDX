@@ -1,0 +1,85 @@
+# Building MobileDx APK
+
+Here are the steps to build the APK for the MobileDx motorcycle diagnostic application:
+
+## Using Android Studio (Recommended Method)
+
+1. **Open the Project in Android Studio**:
+   - Launch Android Studio
+   - Select "Open an Existing Project"
+   - Navigate to your project directory and select it
+
+2. **Sync the Project with Gradle Files**:
+   - Wait for the initial sync process to complete
+   - If prompted to upgrade the Gradle version, accept the upgrade
+
+3. **Resolve Dependencies**:
+   - Android Studio will automatically download all required dependencies
+   - If you encounter any dependency resolution issues, make sure you're connected to the internet
+
+4. **Build the Debug APK**:
+   - Select Build > Build Bundle(s) / APK(s) > Build APK(s)
+   - Wait for the build process to complete
+
+5. **Find the Generated APK**:
+   - Once the build completes, click on the notification "APK(s) generated successfully"
+   - Click on "locate" to open the folder containing the APK
+   - The debug APK will be located at: app/build/outputs/apk/debug/app-debug.apk
+
+6. **Build the Release APK (Optional)**:
+   - For a release build, you'll need to:
+     1. Create a keystore file for signing your app
+     2. Configure the signing configuration in build.gradle
+     3. Select Build > Generate Signed Bundle/APK
+     4. Follow the prompts to create and sign your release APK
+
+## Command Line Alternative (For Advanced Users)
+
+If you're comfortable with the command line, you can also build using:
+
+```bash
+# For Windows:
+.\gradlew.bat assembleDebug
+
+# For Linux/Mac:
+./gradlew assembleDebug
+```
+
+The generated APK will be located at:
+`app/build/outputs/apk/debug/app-debug.apk`
+
+## Installing the APK on Your Device
+
+1. **Enable USB Debugging**:
+   - On your Android device, go to Settings > About phone
+   - Tap "Build number" 7 times to enable Developer options
+   - Go back to Settings > System > Developer options
+   - Enable "USB debugging"
+
+2. **Install the APK**:
+   - Connect your device to your computer with a USB cable
+   - Allow USB debugging when prompted on your device
+   - Copy the APK to your device or use adb:
+     ```bash
+     adb install app/build/outputs/apk/debug/app-debug.apk
+     ```
+   - Alternatively, you can transfer the APK using file manager and install it directly on the device
+
+## Troubleshooting
+
+If you encounter issues building the APK:
+
+1. **Gradle Build Issues**:
+   - Try "File > Invalidate Caches / Restart" in Android Studio
+   - Ensure you have the correct JDK installed (JDK 17 is required)
+   - Update Android Studio and the Android SDK
+
+2. **Dependency Issues**:
+   - Make sure you have internet connectivity
+   - Check if any repositories are blocked by your network
+
+3. **Firebase Configuration**:
+   - Verify that google-services.json is correctly placed in the app directory
+   - Make sure the package name in your app matches the one in google-services.json
+
+For additional support, refer to the official Android documentation or contact the development team. 
