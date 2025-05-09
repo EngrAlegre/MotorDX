@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\alegr\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-mergeReleaseResources-52:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\alegr\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-54:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "com.motor.diagnostic.app-mergeReleaseResources-52:/layout/activity_main.xml",
+        "source": "com.motor.diagnostic.app-main-54:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\alegr\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-mergeReleaseResources-52:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\alegr\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-54:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\alegr\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-mergeReleaseResources-52:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\alegr\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-54:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.motor.diagnostic.app-mergeReleaseResources-52:/layout/activity_splash.xml",
+        "source": "com.motor.diagnostic.app-main-54:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\alegr\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-mergeReleaseResources-52:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\alegr\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-54:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\alegr\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-mergeReleaseResources-52:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\alegr\\.gradle\\daemon\\8.2\\com.motor.diagnostic.app-main-54:\\layout\\activity_login.xml"
+    }
+]

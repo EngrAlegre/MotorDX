@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.motor.diagnostic.presentation.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_diagnosticDetailFragment"
+            app:destination="@id/diagnosticDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/motorcyclesFragment"
+        android:name="com.motor.diagnostic.presentation.ui.motorcycle.MotorcyclesFragment"
+        android:label="Motorcycles"
+        tools:layout="@layout/fragment_motorcycles">
+        <action
+            android:id="@+id/action_motorcyclesFragment_to_addMotorcycleFragment"
+            app:destination="@id/addMotorcycleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.motor.diagnostic.presentation.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_notificationsFragment"
+            app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addMotorcycleFragment"
+        android:name="com.motor.diagnostic.presentation.ui.motorcycle.AddMotorcycleFragment"
+        android:label="Add Motorcycle"
+        tools:layout="@layout/fragment_add_motorcycle" />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.motor.diagnostic.presentation.ui.profile.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.motor.diagnostic.presentation.ui.notification.NotificationsFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.motor.diagnostic.presentation.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/diagnosticDetailFragment"
+        android:name="com.motor.diagnostic.presentation.ui.dashboard.DiagnosticDetailFragment"
+        android:label="Diagnostic Detail"
+        tools:layout="@layout/fragment_diagnostic_detail">
+        <argument
+            android:name="diagnosticType"
+            app:argType="string" />
+    </fragment>
+
+</navigation> 

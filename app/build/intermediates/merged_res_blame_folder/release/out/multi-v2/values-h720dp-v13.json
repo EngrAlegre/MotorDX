@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.motor.diagnostic.app-mergeReleaseResources-51:/values-h720dp-v13/values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\alegr\\.gradle\\caches\\transforms-3\\892b6a0a6e1a45b552ab994c17bdd479\\transformed\\appcompat-1.6.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}

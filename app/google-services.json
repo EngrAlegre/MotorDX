@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "416414084979",
+    "firebase_url": "https://motor-b1a63-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "motor-b1a63",
+    "storage_bucket": "motor-b1a63.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416414084979:android:9e4ea084d59b500a2fdf06",
+        "android_client_info": {
+          "package_name": "com.motor.diagnostic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu03tJppiS2QdQK38TZlD5Dz5AIdHNp94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+} 
